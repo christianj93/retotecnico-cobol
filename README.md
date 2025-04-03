@@ -3,7 +3,7 @@
 
 ## 📝 Introducción
 
-Este proyecto es una aplicación que procesa transacciones bancarias desde un archivo CSV. Permite calcular el balance final, identificar la transacción de mayor monto y contar la cantidad de transacciones de tipo "Crédito" y "Débito". Cuenta con una interfaz gráfica intuitiva para facilitar su uso.
+Este proyecto es una aplicación que procesa transacciones bancarias desde un archivo CSV. Permite calcular el balance final, identificar la transacción de mayor monto y contar la cantidad de transacciones de tipo "Crédito" y "Débito". La aplicación cuenta con una interfaz gráfica intuitiva que muestra los resultados en un área de texto.
 
 ## 🚀 Instrucciones de Ejecución
 
@@ -32,12 +32,11 @@ Sigue estos pasos para ejecutar la aplicación:
    ```sh
    cd retotecnico-cobol
    ```
-3. Accede a la carpeta `cli` y ejecuta el script principal:
+3. Ejecuta el script principal:
    ```sh
-   cd cli
    python main.py
    ```
-4. Se abrirá una interfaz gráfica donde podrás seleccionar un archivo CSV para procesar.
+4. Se abrirá una ventana donde podrás seleccionar un archivo CSV para procesar.
 
 ## 🏗️ Enfoque y Solución
 
@@ -52,11 +51,18 @@ Este enfoque modular facilita la expansión y el mantenimiento del código.
 
 ```
 retotecnico-cobol/
-│── cli/
-│   │── main.py                   # Código principal con GUI y lógica de negocio
+│── src/
+│   │── gui/
+│   │   │── interfaz.py        # Código para la interfaz gráfica con Tkinter
+│   │   │── __init__.py        # Conviente la carpeta en un módulo
+│   │── logic/
+│   │   │── logica.py          # Lógica de negocio para procesar las transacciones
+│   │   │── __init__.py        # Conviente la carpeta en un módulo
+│   │── __init__.py            # Conviente la carpeta en un módulo
 │── input/
-│   │── transacciones.csv          # Archivo de ejemplo con transacciones
-│── README.md                     # Documentación del proyecto
+│   │── transacciones.csv      # Archivo de ejemplo con transacciones
+│── README.md                  # Documentación del proyecto
+│── main.py                    # Archivo principal que invoca la interfaz
 ```
 
-🚀
+El código está bien documentado y diseñado para ser fácil de entender y modificar. ¡Esperamos que sea de utilidad! 🚀
