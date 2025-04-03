@@ -1,6 +1,4 @@
 import csv
-import tkinter as tk
-from tkinter import messagebox
 
 def calcular_balance(transacciones):
     """
