@@ -26,7 +26,7 @@ Sigue estos pasos para ejecutar la aplicación:
 
 1. Clona el repositorio:
    ```sh
-   git clone https://github.com/tu-usuario/retotecnico-cobol.git
+   git clone https://github.com/christianj93/retotecnico-cobol.git
    ```
 2. Accede al directorio del proyecto:
    ```sh
@@ -59,4 +59,4 @@ retotecnico-cobol/
 │── README.md                     # Documentación del proyecto
 ```
 
-El código está bien documentado y diseñado para ser fácil de entender y modificar. ¡Esperamos que sea de utilidad! 🚀
+🚀
