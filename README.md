@@ -1,57 +1,62 @@
-Introducción
 
-Este proyecto es una aplicación para procesar transacciones bancarias desde un archivo CSV. La herramienta calcula el balance final, identifica la transacción de mayor monto y cuenta el número de transacciones de tipo "Crédito" y "Débito". Además, cuenta con una interfaz gráfica para facilitar su uso.
+# 📌 Procesador de Transacciones Bancarias
 
-Instrucciones de Ejecución
+## 📝 Introducción
 
-Requisitos
+Este proyecto es una aplicación que procesa transacciones bancarias desde un archivo CSV. Permite calcular el balance final, identificar la transacción de mayor monto y contar la cantidad de transacciones de tipo "Crédito" y "Débito". Cuenta con una interfaz gráfica intuitiva para facilitar su uso.
 
-Python 3.7 o superior
+## 🚀 Instrucciones de Ejecución
 
-Tkinter (incluido en Python estándar)
+### 🔧 Requisitos
 
-Instalación de Dependencias
+- Python 3.7 o superior
+- Tkinter (incluido en la instalación estándar de Python)
 
-Para mejorar la presentación, se recomienda instalar la librería tkinter (si no está incluida en la instalación de Python) y asegurarse de tener acceso a las funcionalidades necesarias ejecutando:
+### 📦 Instalación de Dependencias
 
+Asegúrate de que `tkinter` esté disponible y ejecuta el siguiente comando para instalar cualquier dependencia necesaria:
+
+```sh
 pip install tk
+```
 
-Ejecución de la Aplicación
+### ▶️ Ejecución de la Aplicación
 
-Para ejecutar la aplicación, sigue estos pasos:
+Sigue estos pasos para ejecutar la aplicación:
 
-Clona el repositorio:
+1. Clona el repositorio:
+   ```sh
+   git clone https://github.com/tu-usuario/retotecnico-cobol.git
+   ```
+2. Accede al directorio del proyecto:
+   ```sh
+   cd retotecnico-cobol
+   ```
+3. Accede a la carpeta `cli` y ejecuta el script principal:
+   ```sh
+   cd cli
+   python main.py
+   ```
+4. Se abrirá una interfaz gráfica donde podrás seleccionar un archivo CSV para procesar.
 
-git clone https://github.com/tu-usuario/retotecnico-cobol.git
+## 🏗️ Enfoque y Solución
 
-Navega al directorio del proyecto:
+El proyecto sigue una arquitectura en capas para mantener una estructura modular y escalable:
 
-cd retotecnico-cobol
+- **Capa de Procesamiento** 📊: Encargada de leer el archivo CSV, calcular el balance final, contar las transacciones y encontrar la transacción con el mayor monto.
+- **Capa de Interfaz** 🎨: Implementa una GUI con `Tkinter` para permitir una interacción amigable con el usuario.
 
-Ejecuta el script principal:
+Este enfoque modular facilita la expansión y el mantenimiento del código.
 
-python cli/main.py
+## 📂 Estructura del Proyecto
 
-Se abrirá una interfaz gráfica donde puedes seleccionar un archivo CSV para procesar.
-
-Enfoque y Solución
-
-El proyecto está desarrollado en Python y sigue una arquitectura en capas:
-
-Capa de Procesamiento: Se encarga de leer el archivo CSV, calcular el balance, contar las transacciones y determinar la transacción de mayor monto.
-
-Capa de Interfaz: Implementa una GUI con Tkinter para una interacción más intuitiva con el usuario.
-
-El diseño modular permite ampliar y mejorar la funcionalidad fácilmente.
-
-Estructura del Proyecto
-
+```
 retotecnico-cobol/
 │── cli/
 │   │── main.py                   # Código principal con GUI y lógica de negocio
-│── README.md                     # Documentación del proyecto
 │── input/
-│   │── transacciones.csv              # Archivo de ejemplo con transacciones
+│   │── transacciones.csv          # Archivo de ejemplo con transacciones
+│── README.md                     # Documentación del proyecto
+```
 
-El código está bien documentado y estructurado para facilitar su mantenimiento y extensión. ¡Esperamos que te sea útil!
-
+El código está bien documentado y diseñado para ser fácil de entender y modificar. ¡Esperamos que sea de utilidad! 🚀
